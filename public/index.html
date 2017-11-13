@@ -5,6 +5,26 @@
     <title></title>
   </head>
   <body>
+    <ul>
+      <li>
+        <div id="howler">
+          <h1>Howler</h1>
+          <button>Play</button>
+          <code>
+            import { Howl } from 'howler';
+
+            const sound = new Howl({
+              src: ['bell.wav']
+            });
+
+            const howlerButton = document.querySelector('#howler button');
+            howerButton.addEventListener('click', function(e) {
+              sound.play();
+            });
+          </code>
+        </div>
+      </li>
+    </ul>
     <script src="/js/bundle.js"></script>
   </body>
 </html>
