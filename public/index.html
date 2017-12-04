@@ -2,7 +2,15 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <title></title>
+    <title>Sound Test</title>
+    <style>
+      code{
+        white-space: pre;
+      }
+      ul{
+        list-style: none;
+      }
+    </style>
   </head>
   <body>
     <ul>
@@ -11,17 +19,17 @@
           <h1>Howler</h1>
           <button>Play</button>
           <code>
-            import { Howl } from 'howler';
+import { Howl } from 'howler';
 
-            const sound = new Howl({
-              src: ['bell.wav']
-            });
+const sound = new Howl({
+  src: ['bell.wav']
+});
 
-            const howlerButton = document.querySelector('#howler button');
+const howlerButton = document.querySelector('#howler button');
 
-            howlerButton.addEventListener('click', function(e) {
-              sound.play();
-            });
+howlerButton.addEventListener('click', function(e) {
+  sound.play();
+});
           </code>
         </div>
       </li>
